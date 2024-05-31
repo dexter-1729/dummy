@@ -41,7 +41,7 @@ if st.session_state['submit']:
  
   #st.write(user,password)
   #st.write(password)
-  engine = create_engine('mysql+mysqlconnector://root:Root#1729@localhost:3306/cbe') 
+  engine = create_engine('mysql+mysqlconnector://root:##########@localhost:3306/cbe') 
   login_validate = engine.execute(f''' select * from cbe.app_access where 
                                   username='{user}' and password='{password}' ''').fetchall()
   #st.write(login_validate)
